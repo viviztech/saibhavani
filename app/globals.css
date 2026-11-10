@@ -134,8 +134,8 @@ p { line-height: 1.8; }
 @media (max-width: 900px) {
   .container { width: min(100% - 64px, 1360px); }
   .section-pad { padding-block: 90px; }
-  .nav-shell { min-height: 78px; }
-  .desktop-nav { gap: 18px; }
+  .nav-shell { min-height: 78px; justify-content: space-between; flex-wrap: wrap; gap: 0 10px; padding-top: 12px; }
+  .desktop-nav { order: 3; flex: 1 0 100%; justify-content: flex-start; flex-wrap: wrap; gap: 10px 24px; min-height: 38px; margin-left: 0; padding-block: 10px; }
   .nav-cta { padding-inline: 14px; }
   .hero { min-height: 620px; }
   .intro-grid { grid-template-columns: .65fr 2fr; gap: 32px; }
@@ -254,4 +254,15 @@ p { line-height: 1.8; }
   .enquiry-form { padding: 22px; }
   .form-grid { grid-template-columns: 1fr; }
   .form-field-wide { grid-column: auto; }
+}
+
+/* Dedicated pages use the same visual hierarchy with semantic page headings. */
+.page-title { margin-top: 17px; font-size: clamp(38px, 4vw, 58px); line-height: 1.14; letter-spacing: -.035em; }
+.service-card .card-title { color: var(--forest-deep); font-size: 25px; line-height: 1.2; }
+.experience-body .card-title { margin-top: 10px; color: var(--forest-deep); font-size: 26px; line-height: 1.2; }
+.visitor-aside .card-title { color: var(--forest-deep); font-size: 25px; line-height: 1.25; }
+.step .card-title { color: var(--forest); font-size: 19px; letter-spacing: normal; }
+@media (max-width: 680px) {
+  .page-title { font-size: clamp(35px, 9vw, 46px); }
+  .experience-body .card-title { font-size: 25px; }
 }

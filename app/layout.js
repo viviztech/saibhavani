@@ -1,4 +1,5 @@
 import './globals.css';
+import { SiteFooter, SiteHeader } from './site-shell';
 
 export const metadata = {
   title: 'Sai Bhavani Tours & Travels | Journeys made personal',
@@ -6,5 +7,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body><SiteHeader />{children}<SiteFooter /></body></html>;
 }
