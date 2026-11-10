@@ -1,14 +1,14 @@
-# Sai Bhavani Tours & Travels — marketing site
+# Sai Bhavani Tours & Travels — marketing website
 
-A Next.js marketing-site preview. The current stage is statically exported and does not include the future admin panel, database, enquiry form or online booking.
+A Next.js marketing website with travel inspiration, visitor information and a structured enquiry builder. It is currently a static export; it does not contain the future admin panel, database or online booking.
 
 ## Run locally
 
-Install Node.js 20.9 or later, then run `npm install` and `npm run dev`. Use `npm run build` to produce the static export in `out/`.
+Install Node.js 20.9 or later, then run `npm install` and `npm run dev`. Run `npm run build` to create the static website in `out/`.
 
-## Before launch
+## Business details and enquiries
 
-The client's real contact details, Google Business Profile, services, destinations, pricing and brand assets have not been verified. Replace the pending contact message in `app/page.js` and confirm all copy and imagery with the client before public launch. The examples are inspiration only.
+Business details have not been verified. Configure the client's real phone number, WhatsApp number, email address and Google Business Profile in `app/business.js` after confirmation. The enquiry builder can prepare a trip summary, but it does not store or send enquiries to the business by itself. When a supported contact method is configured, the visitor can choose it to share the details. Confirm service offerings, destinations, prices, branding and imagery before public launch. Examples on the site are inspiration, not confirmed offerings.
 
 ## Image credits
 
