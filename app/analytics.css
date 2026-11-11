@@ -1,0 +1,6 @@
+.analytics-preferences { display: block; margin: 0; padding: 12px 20px; border: 0; background: #302b43; color: #f2e7ef; cursor: pointer; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
+.analytics-banner { position: fixed; z-index: 20; right: 20px; bottom: 20px; left: 20px; max-width: 560px; padding: 20px; border: 1px solid #decbd1; background: #fff8ef; color: #352d39; box-shadow: 0 12px 35px rgba(48, 43, 67, .2); }
+.analytics-banner p { font-size: 13px; line-height: 1.6; }
+.analytics-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.analytics-actions button { padding: 10px 14px; border: 1px solid #66374a; background: #66374a; color: #fff; cursor: pointer; font-size: 12px; font-weight: 700; }
+.analytics-actions button + button { background: transparent; color: #66374a; }

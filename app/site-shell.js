@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { ArrowUpRight, Compass } from "lucide-react";
+import MobileMenu from "./mobile-menu";
 
 const navigation = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/catalogue", label: "Catalogue" },
   { href: "/destinations", label: "Destinations" },
   { href: "/visitor-guide", label: "Visitor guide" },
   { href: "/about", label: "About" },
+  { href: "/gallery", label: "Gallery" },
 ];
 
 function Brand() {
@@ -23,10 +26,11 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="nav-shell container">
         <Brand />
-        <nav className="desktop-nav" aria-label="Main navigation">
+        <nav className="desktop-nav d-none d-xl-flex" aria-label="Main navigation">
           {navigation.map(({ href, label }) => <Link href={href} key={href}>{label}</Link>)}
         </nav>
-        <Link className="nav-cta" href="/contact">Plan a journey <ArrowUpRight size={16} /></Link>
+        <Link className="nav-cta btn d-none d-sm-inline-flex" href="/contact">Plan a journey <ArrowUpRight size={16} /></Link>
+        <MobileMenu navigation={navigation} />
       </div>
     </header>
   );
